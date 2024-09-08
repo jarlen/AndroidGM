@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_menu">
+        <item>SM3</item>
+        <item>HMacWithSm3</item>
+        <item>SM4-ECB-加密</item>
+        <item>SM4-ECB-解密</item>
+        <item>SM4-CBC-加密</item>
+        <item>SM4-CBC-解密</item>
+        <item>SM2-加密</item>
+        <item>SM2-解密</item>
+        <item>签名(SM3WithSM2)</item>
+        <item>验签(SM3WithSM2)</item>
+    </string-array>
+
+    <string-array name="spinner_menu_class">
+        <item>cn.jarlen.android.gm.sample.SM3Process</item>
+        <item>cn.jarlen.android.gm.sample.HMacWithSm3Process</item>
+        <item>cn.jarlen.android.gm.sample.SM4ECBEncryptProcess</item>
+        <item>cn.jarlen.android.gm.sample.SM4ECBDecryptProcess</item>
+        <item>cn.jarlen.android.gm.sample.SM4CBCEncryptProcess</item>
+        <item>cn.jarlen.android.gm.sample.SM4CBCDecryptProcess</item>
+    </string-array>
+</resources>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_input_data"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#13227a"
+            android:hint="请输入测试内容"
+            android:minHeight="48dp"
+            android:textColorHighlight="#13227a"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/iv_scan"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_scan"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_input_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#13227a"
+            android:hint="请输入KEY"
+            android:minHeight="48dp"
+            android:textColorHighlight="#13227a"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/et_input_data"
+            app:layout_constraintStart_toStartOf="@+id/et_input_data"
+            app:layout_constraintTop_toBottomOf="@+id/et_input_data" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_input_iv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#13227a"
+            android:hint="请输入向量IV"
+            android:minHeight="48dp"
+            android:textColorHighlight="#13227a"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/et_input_key"
+            app:layout_constraintStart_toStartOf="@+id/et_input_key"
+            app:layout_constraintTop_toBottomOf="@+id/et_input_key" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <org.angmarch.views.NiceSpinner
+        android:id="@+id/spinner_menu"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="算法"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_input" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="执行"
+        app:layout_constraintStart_toEndOf="@+id/spinner_menu"
+        app:layout_constraintTop_toTopOf="@+id/spinner_menu" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_copy_result_to_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="复制结果作为输入"
+        app:layout_constraintStart_toEndOf="@+id/btn_process"
+        app:layout_constraintTop_toTopOf="@+id/spinner_menu" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_result"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="start"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_menu"
+        tools:text="测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测测试试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测测试试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,3 @@
+include ':GMLibrary'
+include ':app'
+rootProject.name = "AndroidGM"
